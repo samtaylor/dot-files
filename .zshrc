@@ -49,10 +49,7 @@ plugins=(git gradle)
 
 # User configuration
 
-export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/taylos90/.rvm/gems/ruby-1.9.3-p448/bin:/Users/taylos90/.rvm/gems/ruby-1.9.3-p448@global/bin:/Users/taylos90/.rvm/rubies/ruby-1.9.3-p448/bin:/Users/taylos90/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/taylos90/development/gradle-2.3/bin:/Users/taylos90/development/android-sdk-macosx/platform-tools:/Users/taylos90/dex2jar-0.0.9.15"
-# export MANPATH="/usr/local/man:$MANPATH"
-
-export PATH=$PATH:/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/taylos90/development/dex2jar-0.0.9.15:/Users/taylos90/development/android-sdk-macosx/platform-tools:/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -88,9 +85,6 @@ alias zshconfig="source ~/.zshrc"
 export ANDROID_HOME=~/development/android-sdk-macosx
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export ANDROID_KEYSTORE_PATH=~/development/android-signing-keys
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
 
 networkLocation=$(networksetup -getcurrentlocation)
 
@@ -128,6 +122,8 @@ then
    fi;
 fi
 
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
