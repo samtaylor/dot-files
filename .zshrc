@@ -82,7 +82,7 @@ alias zshconfig="source ~/.zshrc"
 # export http_proxy=http://www-cache.reith.bbc.co.uk:80
 # export https_proxy=$http_proxy
 # export ALL_PROXY=$http_proxy
-export ANDROID_HOME=~/development/android-sdk-macosx
+export ANDROID_HOME=~/Library/Android/sdk
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export ANDROID_KEYSTORE_PATH=~/development/android-signing-keys
 

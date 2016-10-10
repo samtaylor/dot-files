@@ -19,6 +19,7 @@
 	stl = stash list
 	stp = stash pop
 	sts = stash save
-	
+	######
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short	
 	
 	
