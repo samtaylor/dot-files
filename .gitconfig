@@ -1,0 +1,24 @@
+[user]
+	email = samuel.taylor@bbc.co.uk
+	name = Samuel Taylor
+
+[alias]
+	#######
+	co = checkout
+	######
+	a = add
+	aa = add --all
+	######
+	f = fetch --all
+	######
+	rh = reset --hard
+	######
+	s = status
+	######
+	sta = stash apply
+	stl = stash list
+	stp = stash pop
+	sts = stash save
+	
+	
+	
